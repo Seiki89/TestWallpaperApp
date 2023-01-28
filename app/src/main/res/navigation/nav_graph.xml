@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.seiki.android.wallpaperapptest.screens.main_fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fullImage"
+            app:destination="@id/fullImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullImage"
+        android:name="com.seiki.android.wallpaperapptest.screens.full_Image.FullImage"
+        android:label="fragment_full_image"
+        tools:layout="@layout/fragment_full_image" >
+        <action
+            android:id="@+id/action_fullImage_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

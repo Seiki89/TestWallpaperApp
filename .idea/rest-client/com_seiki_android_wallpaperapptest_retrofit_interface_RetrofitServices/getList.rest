@@ -1,0 +1,11 @@
+GET
+{BASE_URL}/api/?key=33106230-b104905cd7ff74ed17e2229af&q=nature&image_type=photo
+
+
+
+
+%%%
+# GET
+# /api/?key=33106230-b104905cd7ff74ed17e2229af&q=nature&image_type=photo
+
+# Error: java.lang.IllegalArgumentException: Expected URL scheme 'http' or 'https' but no colon was found
